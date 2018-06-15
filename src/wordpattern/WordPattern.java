@@ -57,11 +57,8 @@ public class WordPattern {
                 map.put(splittedString[i], p_char);
                 seen.add(p_char);
             }
-            else
-            {
-                if (map.get(splittedString[i]) == null || p_char != map.get(splittedString[i]))
-                    return false;
-            }
+            else if (map.get(splittedString[i]) == null || p_char != map.get(splittedString[i]))
+                return false;
         }
         
         return true;
